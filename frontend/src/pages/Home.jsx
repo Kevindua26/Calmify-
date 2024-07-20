@@ -23,7 +23,7 @@ const Home = () => {
 
         <div className="p-6 text-center -mt-20">
           <h1 className="text-[2rem] font-medium leading-[2.5rem]">
-            Welcome to Happy Minds. A place to <br />
+            Welcome to Calmify. A place to <br />
             <span className="text-yellow-400">
               <ReactTyped
                 strings={[
@@ -65,7 +65,7 @@ const Home = () => {
         <div className="w-2/4 p-6 pt-36 flex flex-col gap-9 lg:pl-20">
           <div className="pl-10">
             <h1 className="lg:text-[2.8rem] font-medium leading-[3.4rem] md:text-[2.4rem]">
-              Welcome to Happy Minds. A place to <br />
+              Welcome to Calmify. A place to <br />
               <span className="text-yellow-400">
                 <ReactTyped
                   strings={[
