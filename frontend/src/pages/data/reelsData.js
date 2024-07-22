@@ -7,7 +7,7 @@ const reelsData = [
       profileName: "Lisha",
       likes: 100,
       tags: ["#calm", "#peace", "#anime"],
-      videoUrl:"",
+      videoUrl:"https://v1.pinimg.com/videos/mc/720p/2e/be/c8/2ebec8180b71e1b96b5d46d46198d2e3.mp4",
     },
     {
       thumbnail:

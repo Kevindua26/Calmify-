@@ -5,12 +5,11 @@ import Logo from "../components/Logo";
 import Card from "../components/Card";
 import Tags from "../components/Tags";
 import Profile from "../components/Profile";
-import reelsData from "./data/reelsData.js"
+import reelsData from "./data/reelsData.js";
+import { Link } from "react-router-dom";
 const Reels = () => {
-
   return (
     <div className="Reels">
-      
       <div className="container mx-auto p-10 pl-14 ">
         <div className="Card-Container columns-4 gap-2">
           {reelsData.map(
@@ -18,7 +17,10 @@ const Reels = () => {
               reel,
               index //implicit return using parenthesis, if you are using {} return explicitly, cool
             ) => (
-              <div key={index} className="mb-10 max-w-[20vw] w-full h-fit border-b-2 rounded-xl break-inside-avoid">
+              <Link to={`/reels/${index}`}><div
+                key={index}
+                className="mb-10 max-w-[20vw] w-full h-fit border-b-2 rounded-xl break-inside-avoid"
+              >
                 <Card thumbnail={reel.thumbnail} />
                 <Profile
                   profileImage={reel.profileImage}
@@ -26,43 +28,10 @@ const Reels = () => {
                   likes={reel.likes}
                 />
                 <Tags tags={reel.tags} />
-              </div>
+              </div></Link>
             )
           )}
         </div>
-
-        {/* 
-        <div className="card w-full max-w-[20vw] h-fit">
-        <div class="max-w-[20vw] h-fit rounded-xl overflow-hidden shadow-lg">
-          <img
-            className="w-full cursor-pointer"
-            src="https://i.pinimg.com/videos/thumbnails/originals/29/05/e3/2905e3a4d4606618bda59d593407812a.0000000.jpg"
-            alt=""
-          />
-        </div>
-
-        <div className="flex gap-3 mt-2 w-full items-center max-w-[20vw]">
-          <div className="w-10 h-8 rounded-full  overflow-hidden flex justify-center">
-            <img
-              className="w-full cursor-pointer"
-              src="https://scontent.fdel3-2.fna.fbcdn.net/v/t39.30808-1/295319685_360221382954934_4867433556313988669_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=3uEobPNXSKEQ7kNvgHOMriM&_nc_ht=scontent.fdel3-2.fna&oh=00_AYBnTFPFm3twWg43DCEQkDf2BhA2crYY3NRXu00I2_vOmA&oe=66A15285"
-              alt="profile"
-            />
-          </div>
-          <div className="max-w-[20vw] flex justify-between items-center w-full">
-            <div className="hover:underline cursor-pointer">Lisha</div>
-            <div className=" flex justify-center items-center gap-1">
-              {" "}
-              <div>100</div>
-              <div className="cursor-pointer">
-                <img className="w-4" src={like} alt="like" />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <Tags /> */}
-        {/* </div> */}
       </div>
     </div>
   );
