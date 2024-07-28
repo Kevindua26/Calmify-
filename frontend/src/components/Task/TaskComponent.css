@@ -1,0 +1,125 @@
+
+
+
+
+.Main{
+    /* z-index: 2; */
+    /* background: url("./assets/WhatsApp\ Image\ 2024-07-26\ at\ 11.41.29_aab74a01.jpg"); */
+    background: linear-gradient(to bottom right, #efc2dd, #d0c5ef, #c3def1);
+    background-size: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.result{
+    height: 400px;
+    /* background-color: rgb(230, 234, 238); */
+    background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 2rem;
+    
+}
+.task{
+    /* background-color: rgb(230, 234, 238); */
+    background-color: transparent;
+    width: 100%;
+
+}
+.Main p{
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: transparent;
+    /* margin-top: 10px; */
+    line-height: 50px;
+}
+i{
+    padding:0 1.5rem;
+    background-color: transparent;
+    color: black;
+}
+.graphImg{
+    
+    height: 350px;
+    width: 500px;
+}
+.graph{
+    /* width: 40vw; */
+    background-color: transparent;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+ul li{
+    font-weight: 700;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    user-select: none;
+    width: 90%;
+    min-height: 50px;
+    margin:  0 auto;
+    border-radius: 5rem;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    /* background-color: transparent; */
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in-out;
+
+}
+.a{
+    background-color: rgb(235,179,66,255);
+    /* background-color: transparent; */
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+ul li:hover{
+    /* background-color: rgb(194, 178, 173); */
+    background-color: #ce95a7;
+    /* opacity: 0.5; */
+
+}
+.b{
+    background-color:rgba(30,47,75,255) ;
+    /* background-color: transparent; */
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+
+}
+.c{
+    background-color:rgba(125,174,168,255) ;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.d{
+    background-color: rgba(208,71,91,255);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+/* .first:hover{
+    background-color: rgb(253,208,23);
+
+} */
+ /* .head{
+    background-image: url("smile.jpg");
+ } */
+  .p:hover{
+    opacity: 90%;
+    color: cornflowerblue;
+  }

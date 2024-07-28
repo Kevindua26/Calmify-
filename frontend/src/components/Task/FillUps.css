@@ -1,0 +1,90 @@
+
+
+.FillUps{
+   background-color: #fdefb2 ;
+   font-size: 20px;
+   font-weight: 200;
+   padding: none;
+}
+
+
+.card{
+   padding: 10px;
+   border-radius: 1.5rem;
+   margin: 20px;
+   
+}
+
+.cardtext{
+   background-color: rgb(168, 138, 197);
+   height: 100px;
+   width: 260px;
+   border-radius: 20px;
+   /* display: flex;
+    */
+    padding-top: 5px;
+}
+.content{
+   display: flex;
+   height: 100%;
+   width: 100%;
+   flex-wrap: wrap;
+   justify-content: center;
+   justify-content: space-evenly;
+   
+}
+.title{
+   text-align: center;
+   text-decoration: underline;
+   color: darkmagenta;
+   font-size: 60px;
+   font-weight: 500;
+}
+/* h4{
+   background-color: rgb(168, 138, 197);
+   margin: 0%; */ 
+
+label{
+  
+   background-color: rgb(168, 138, 197);
+  
+}
+input::placeholder{
+   background-color: rgb(168, 138, 197);
+}
+p{
+   background-color: rgb(168, 138, 197);
+   text-align: center;
+   color: beige;
+   font-size: 30px;
+   font-weight: 400px;
+   margin: 5px;
+   font-size: 2rem;
+   font-weight: 800;
+   background-color: transparent;
+   /* margin-top: 10px; */
+   line-height: 50px;
+
+}
+input::placeholder {
+   font-weight: bold;
+   opacity: 0.5;
+   color: rgb(239, 236, 241);
+   background-color: rgb(127, 30, 218);
+   outline: none;
+   padding: none;
+  
+ }
+input::selection{
+   outline: none;
+}
+.fillUps-input{
+   outline: none;
+   border: none;
+   border-bottom: 2px solid rgb(148, 18, 223);
+   text-align: center;
+   width: 200px;
+   padding: -2px;
+   margin: auto;
+   display: block;
+}

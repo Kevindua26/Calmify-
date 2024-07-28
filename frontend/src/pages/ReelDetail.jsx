@@ -5,6 +5,7 @@ import Profile from "../components/Profile";
 import Tags from "../components/Tags";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
+import reelBgVideo from "../assets/reelbgVideo.mp4";
 
 const ReelDetail = () => {
   const { id } = useParams();
@@ -16,21 +17,29 @@ const ReelDetail = () => {
 
   return (
     <div className="ReelDetail">
-      <div className="container mx-auto p-10 px-48">
-        <div className="reel-player border-2 shadow-2xl rounded-3xl max-h-[130vh] h-full p-5 bg-[url('https://media-public.canva.com/f1hdo/MAE2s6f1hdo/1/s.svg')] bg-cover bg-center bg-no-repeat flex">
+      <div className="container mx-auto py-10">
+        <div className="reel-player border-2 relative w-full justify-center shadow-2xl rounded-3xl max-h-[130vh] h-full p-5 overflow-hidden bg-cover bg-center bg-no-repeat flex">
           <video
             src={reel.videoUrl}
             controls
             autoPlay
-            className="w-[50%] h-auto rounded-3xl"
+            className="w-[30vw] h-auto rounded-3xl shadow-lg border-2 border-gray-500-500"
           />
-          <div className="flex items-center pl-10">
+         <video
+            src={reelBgVideo}
+            loop
+            muted
+            type="video/mp4"
+            autoPlay
+            className="w-full h-full object-cover absolute left-0 right-0 bottom-0 top-0 -z-10"
+          />
+          {/* <div className="flex items-center pl-10">
             <img
               className="w-full"
               src="https://media-public.canva.com/dxIfU/MADQDzdxIfU/2/tl.png"
               alt="rabbit"
             />
-          </div>
+          </div> */}
         </div>
         {/* <div className="reel-info mt-4">
           <Profile

@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="Home w-screen h-screen py-4 relative flex flex-col md:flex-row">
-      <img
+      {/* <img
         src={logo}
         alt="logo"
         className="absolute top-5 left-4 h-11 w-11 z-10"
-      />
+      /> */}
 
       {/* Mobile view */}
       <div className="w-full flex flex-col items-center md:hidden">
@@ -83,11 +83,11 @@ const Home = () => {
           <div className="pl-10">
             <h2 className="text-2xl font-normal md:text-[1.3rem]">
               A platform where you can play Games, watch videos, complete tasks
-              by defeating demons.
+              and many more.
             </h2>
           </div>
           <div className="pl-10">
-            <Link to={"/character"}>
+            <Link to={"/mood"}>
               <Button
                 sx={{
                   color: "black",

@@ -10,6 +10,13 @@ import FlappyBirdGame from "../pages/FlappyBirdGame";
 import ColorMatch from "../pages/ColorMatch";
 import Mood from "../pages/Mood";
 import Input from "../components/Mood/Input";
+import Task from "../pages/Task";
+import Login from "../pages/Login";
+import SignUp from "../pages/SignUp";
+import FillColor from "../components/FillColor/FillColor";
+import FillColor1 from "../components/FillColor/FillColor1";
+import FillUps from "../components/Task/FillUps";
+import Gratitude from "../components/Task/Gratitude";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +58,30 @@ const router = createBrowserRouter([
       {
         path:"/mood",
         element: <Mood/>,
+      },
+      {
+        path:"/tasks",
+        element: <Task/>,
+      },
+      {
+        path:"/login",
+        element: <Login/>,
+      },
+      {
+        path:"/signup",
+        element: <SignUp/>,
+      },
+      {
+        path:"/fillcolor",
+        element: <FillColor/>,
+      },
+      {
+        path:"/fillups",
+        element: <FillUps/>,
+      },
+      {
+        path:"/gratitude",
+        element: <Gratitude/>,
       },
     ],
   },

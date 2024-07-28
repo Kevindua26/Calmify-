@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { IoMdMale } from "react-icons/io";
 import { IoMdFemale } from "react-icons/io";
-
-import homeImg from "../assets/home.png";
-import characterImg from "../assets/character.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import Button from "@mui/material/Button";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
@@ -16,18 +14,14 @@ const Character = () => {
   const handleCardClick = (gender) => {
     setSelectedGender(gender);
   }
-  // setBorder((prev)=> {
-  //   return {
-  //     ...prev,
-      
-  //   }
-  // });
+
   // function toggleBorder(element) {
   //   console.log(element);
   //   element.classList.toggle("border-2");
   // }
   return (
     <div className="Character ">
+      <div className="relative">
       <h1 className="text-center font-semibold text-[2.5rem] montserrat">
         What's your official gender ?
       </h1>
@@ -55,43 +49,28 @@ const Character = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="hidden md:flex w-full h-full">
-        <div className="w-2/4 p-6 pt-36 flex flex-col gap-9 lg:pl-20">
-          <div className="pl-10">
-            <h1 className="lg:text-[2.8rem] font-medium leading-[3.4rem] md:text-[2.4rem]">
-            Choose your character<br />
-              
-            </h1>
-          </div>
-          <div className="pl-10">
-            <img src={male}></img>
-           
-          </div>
-          <div className="pl-10">
-            <Link to={"/reels"}>
-              <Button
+      </div>
+      <Link to={"/mood"} className="bottom-6 absolute right-5">
+              <Button 
                 sx={{
+                 
                   color: "black",
                   border: "2px solid black",
                   ":hover": {
-                    backgroundColor: "light-gray",
-                    border: "2px solid black",
+                    color:"white",
+                    backgroundColor: "#b45309",
+                    border: "2px solid brown",
+                    
                     boxShadow:
                       "inset 0 -100px 0 rgba(41, 41, 41, .05), 0 4px 6px 0 rgba(0, 0, 0, .1), 0 1px 10px 0 rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .1);",
                   },
                 }}
                 variant="outlined"
               >
-                Get Started
+                Continue  &nbsp;<FaLongArrowAltRight />
+
               </Button>
             </Link>
-          </div>
-        </div>
-        <div className="w-2/4 ml-auto flex justify-center items-center">
-          <img className="w-full max-w-lg" src={characterImg} alt="home" />
-        </div>
-      </div> */}
     </div>
   );
 };
